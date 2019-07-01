@@ -1,0 +1,332 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+@import "fontawesome";
+@import "brands";
+@import "regular";
+@import "solid";
+@import "v4-shims";
+
+$font-1: "Open Sans", serif;
+$font-2: Roboto, sans-serif;
+$prime-color: rgba(133,133,133,0.5);
+$second-color: #39383a;
+
+.container-wrapper {
+    .container {
+    display: flex;
+    max-width: 960px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin: 10px auto 10px auto;
+    background-color: $prime-color;
+        border-radius: 5px;
+    }
+
+    .profile {
+    width: 360px;
+    background-color: $second-color;
+    color: #ffffff;
+    border-radius: 5px 0px 0px 5px;
+    }
+
+    .profile-info {
+    padding: 30px 30px 20px 30px;
+
+    }
+
+    .profile-text {
+        font-family: $font-2;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+        text-align: justify;
+    }
+
+    .heading {
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 15px;
+        font-family: $font-1;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    border-bottom: 2px dashed #afb3b2;
+    }
+
+    .heading-languages {
+    margin: 0 30px 0 30px;
+    }
+
+    .heading-2 {
+        font-size: 16px;
+        font-weight: 400;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 15px;
+    }
+
+    .profile-photo {
+    background: url(https://media.istockphoto.com/photos/gorilla-businessman-picture-id174263939) no-repeat 50% 50%;
+    background-size: cover;
+    height: 290px;
+        border-radius: 5px 0px 0px 0px;
+    }
+
+    .text-through {
+    text-decoration: line-through;
+    }
+
+    .contacts {
+        padding: 0px 30px 40px 30px;
+
+    }
+
+    .contacts-title {
+        color: #fff;
+        margin-bottom: 13px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .contacts-text {
+        text-decoration: none;
+        color: #ababab;
+        padding-left: 27px;
+    }
+    .contacts-item {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 2px dashed #5a5a5a;
+    }
+
+    address {
+        line-height: 21px;
+        font-style: normal;
+    }
+
+    .fas {
+        margin-right: 7px;
+    }
+
+    .languages {
+        padding: 15px 30px 20px 30px;
+        display: flex;
+    }
+
+    .language {
+        width: 100px;
+        height: 100px;
+        border: 6px solid #5c5c5c;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 30px 30px 20px;
+    }
+
+    .language-text {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-family: $font-2;
+    }
+
+    .language-per {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .resume {
+        flex-basis: 61%;
+        background-color: #fff;
+        margin-left: 20px;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    .resume-wrap {
+        margin: 30px 50px 0px 30px;
+        padding: 36px 56px;
+        height: 95%;
+        border: 2px solid rgba(220, 220, 220, 0.5);
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 38px;
+    }
+
+    .logo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        border: 1px solid #39383a;
+        border-radius: 50%;
+    }
+    .logo-head {
+        color: #39383a;
+        font-family: $font-2;
+        font-size: 32px;
+        letter-spacing: 3px;
+    }
+
+    .logo-lines {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+
+    .line {
+        width: 43px;
+        height: 2px;
+        background-color: #39383a;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .lines-left {
+        .line:nth-child(2) {
+            margin-right: 20px;
+            width: 55px;
+        }
+    }
+
+    .lines-right {
+        .line:nth-child(2) {
+            margin-left: 20px;
+            width: 55px;
+        }
+    }
+    .about {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .name {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 10.75px;
+        color: #39383a;
+        margin-bottom: 10px;
+    }
+
+    .position {
+        display: inline-block;
+        font-size: 9px;
+        text-transform: uppercase;
+        color: #808080;
+        margin-bottom: 30px;
+    }
+
+    .about-address {
+        font-size: 13px;
+        color: #39383a;
+        margin-bottom: 15px;
+        font-family: $font-2;
+        font-weight: 700;
+    }
+
+    .about-contacts {
+        font-size: 8px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 30px;
+    }
+
+    .about-link {
+        text-decoration: none;
+        color: #777777;
+    }
+
+    .list {
+        list-style: none;
+        font-family: $font-2;
+        margin-top: 20px;
+    }
+
+    .list-item {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #ececec;
+    }
+
+    .list-item:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #000;
+    }
+
+    .item-title {
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .item-date {
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .item-text {
+        font-size: 10px;
+        color: #777777;
+    }
+    .list-item:nth-child(3) {
+        border: none;
+    }
+
+    .education {
+        .list-item {
+            border: none;
+        }
+    }
+/*
+    .skills {
+        .heading-2 {
+            margin-bottom: 48px;
+        }
+    }
+    .skills-list {
+        list-style-type: none;
+    }
+    .skill-item {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lvl {
+        width: 70%;
+        height: 8px;
+        border: 1px solid #39398a;
+        position: relative;
+    }
+    .lvl:before {
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background-color: #898989;
+    }
+
+ */
+}
+
